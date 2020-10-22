@@ -32,4 +32,11 @@ public class Passport {
                 ", ownerName='" + ownerName + '\'' +
                 '}';
     }
+
+    public Passport changeOwner(Passport ownerName) {
+        PassportUtil.changeOwner(this);
+        return ownerName;
+    }
+
+
 }
